@@ -69,6 +69,7 @@ section {
   color: $accent;
   font-size: clamp(12px, 3vmin, 25px);
   position: relative;
+  overflow: hidden;
   .logo {
     max-width: 300px;
     width: 20vw;
@@ -807,6 +808,9 @@ section {
 }
 
 @media only screen and (max-width: 800px) {
+  .container {
+    scroll-snap-type: none;
+  }
   .section-1 {
     .content {
       flex-direction: column;
